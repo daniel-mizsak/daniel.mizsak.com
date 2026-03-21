@@ -1,9 +1,12 @@
 # Project
+public
+resources
 
 # System
 .DS_Store
 
 # Development files
+.hugo_build.lock
 megalinter-reports
 
 # Environments
