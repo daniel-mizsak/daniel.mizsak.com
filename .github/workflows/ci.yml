@@ -2,12 +2,10 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
   schedule:
     - cron: "0 12 * * 6" # Every Saturday at 12:00
+  workflow_call:
 
 permissions: {}
 
@@ -23,3 +21,28 @@ jobs:
     uses: daniel-mizsak/workflows/.github/workflows/lint.yml@v1
     with:
       megalinter-config: "./.github/linters/.megalinter.yml"
+
+  ci:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out the codebase
+        uses: actions/checkout@v6.0.2
+        with:
+          submodules: true
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v3.0.0
+        with:
+          hugo-version: "latest"
+
+      - name: Build documentation
+        run: >
+          hugo build --minify --destination public
+
+      - name: Upload documentation artifacts
+        uses: actions/upload-pages-artifact@v4.0.0
+        with:
+          name: site
+          path: public

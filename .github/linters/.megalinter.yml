@@ -2,10 +2,16 @@
 # Configuration file for MegaLinter
 # See all available variables at https://megalinter.io/configuration/ and in linters documentation
 
+FILTER_REGEX_EXCLUDE: (themes/)
+
 DISABLE:
   - SPELL
 DISABLE_ERRORS_LINTERS:
+  - COPYPASTE_JSCPD
+  - REPOSITORY_CHECKOV
+  - REPOSITORY_GRYPE
   - REPOSITORY_KICS
+  - REPOSITORY_TRIVY
 
 FLAVOR_SUGGESTIONS: false
 GITHUB_COMMENT_REPORTER: true

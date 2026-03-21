@@ -1,39 +1,19 @@
-# <div align="center">🖨 repository-template</div>
+# <div align="center">🌐 daniel.mizsak.com</div>
 
 <div align="center">
     <kbd>
-        <a href="https://github.com/daniel-mizsak/repository-template/actions/workflows/ci.yml" target="_blank"><img src="https://github.com/daniel-mizsak/repository-template/actions/workflows/ci.yml/badge.svg" alt="build status"></a>
-        <a href="https://results.pre-commit.ci/latest/github/daniel-mizsak/repository-template/main" target="_blank"><img src="https://results.pre-commit.ci/badge/github/daniel-mizsak/repository-template/main.svg" alt="pre-commit.ci status"></a>
-        <a href="https://github.com/daniel-mizsak/repository-template/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/daniel-mizsak/repository-template" alt="license"></a>
+        <a href="https://github.com/daniel-mizsak/daniel.mizsak.com/actions/workflows/ci.yml" target="_blank"><img src="https://github.com/daniel-mizsak/daniel.mizsak.com/actions/workflows/ci.yml/badge.svg" alt="build status"></a>
+        <a href="https://github.com/daniel-mizsak/daniel.mizsak.com/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/daniel-mizsak/daniel.mizsak.com" alt="license"></a>
     </kbd>
 </div>
 
 ## Overview
 
-Template for repository configurations.
+My personal website.
 
 ## Getting started
 
-Detailed documentation of components:
-
-- [tools](docs/tools.md)
-
-The next topic.
-
-<details>
-<summary>Some details</summary>
-<br>
-
-Example code snippet:
-<br>
-
-```bash
-export HELLO=world
-```
-
-</details>
-
-Additional information.
+[https://daniel.mizsak.com](https://daniel.mizsak.com)
 
 <hr>
 
