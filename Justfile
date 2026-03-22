@@ -4,6 +4,8 @@
 [group("lifecycle")]
 clean:
     rm -rf \
+        public \
+        resources \
         megalinter-reports
     find . -name ".DS_Store" -type f -delete
 
