@@ -48,3 +48,4 @@ repos:
     rev: v2.4.2
     hooks:
       - id: codespell
+        exclude: "assets/css/compiled/main.css"
