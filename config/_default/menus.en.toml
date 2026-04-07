@@ -17,7 +17,7 @@
 
 [[main]]
   name = "Book Reviews"
-  pageRef = "book_reviews"
+  pageRef = "book-reviews"
   weight = 20
 
   #[[subnavigation]]
