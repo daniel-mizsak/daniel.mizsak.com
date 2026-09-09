@@ -17,13 +17,13 @@ jobs:
   prek:
     permissions:
       contents: read
-    uses: daniel-mizsak/workflows/.github/workflows/prek.yml@9fc22b088e89dfacdd25003693d24b209b0d5768 # v2.3.1
+    uses: daniel-mizsak/workflows/.github/workflows/prek.yml@47072f8671741e664ef3f0a01dc6ec1c8adf9c29 # v3.0.0
 
   lint:
     permissions:
       contents: read
       pull-requests: write
-    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@9fc22b088e89dfacdd25003693d24b209b0d5768 # v2.3.1
+    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@47072f8671741e664ef3f0a01dc6ec1c8adf9c29 # v3.0.0
     with:
       megalinter-config: "./.github/linters/.megalinter.yml"
 
